@@ -23,16 +23,17 @@ const HeroSection = () => {
                     <p className="md:max-w-md lg:max-w-xl text-sm text-gray-200 font-medium">I specialize in crafting interactive, responsive, and user-friendly web interfaces. Passionate about frontend development, I turn ideas into visually stunning digital experiences. Let’s build something amazing together!</p>
 
                 </div>
+                {/* www.linkedin.com/in/jm-jahid-hasan */}
                 {/* social links */}
                 <div className='space-x-5 text-white  md:text-start'>
-                    <a href="https://www.facebook.com/jm.jahid.hasan.392854?mibextid=ZbWKwL"><i class="fa-brands fa-facebook text-[25px]"></i></a>
-                    <Link><i class="fa-brands fa-twitter text-[25px]"></i></Link>
-                    <Link><i class="fa-brands fa-instagram text-[25px]"></i></Link>
-                    <Link><i class="fa-brands fa-linkedin-in text-[25px]"></i></Link>
+                    <button className='border text-[#0D47A1] hover:text-white border-[#0D47A1]  p-[10px] rounded-full hover:bg-[#0D47A1] hover:shadow-[0px_0px_10px_#0D47A1]'><a href="https://www.facebook.com/jm.jahid.hasan.392854?mibextid=ZbWKwL "><i class="fa-brands fa-facebook flex justify-center items-center w-[8px] h-[8px]"></i></a></button>
+                    <button className='border text-[#0D47A1] hover:text-white border-[#0D47A1]  p-[10px] rounded-full hover:bg-[#0D47A1] hover:shadow-[0px_0px_10px_#0D47A1]'><a href="https://www.linkedin.com/in/jm-jahid-hasan/"><i class="fa-brands fa-linkedin-in flex justify-center items-center w-[8px] h-[8px]"></i></a></button>
+                    <button className='border text-[#0D47A1] hover:text-white border-[#0D47A1]  p-[10px] rounded-full hover:bg-[#0D47A1] hover:shadow-[0px_0px_10px_#0D47A1]'><i class="fa-brands fa-twitter flex justify-center items-center w-[8px] h-[8px]"></i></button>
+                    <button className='border text-[#0D47A1] hover:text-white border-[#0D47A1]  p-[10px] rounded-full hover:bg-[#0D47A1] hover:shadow-[0px_0px_10px_#0D47A1]'><i class="fa-brands fa-instagram flex justify-center items-center w-[8px] h-[8px]"></i></button>
                 </div>
 
                 <div className=' md:text-start'>
-                    <button className='bg-blue-900 hover:bg-blue-900 px-4 py-3 rounded-md text-white '>Download Resume</button>
+                    <button className='bg-blue-900 px-4 py-3 rounded-md text-white '><a href="/public/Resume_of_jahid_hasan.pdf" download="Resume_of_jahid_hasan.pdf">Download Resume</a></button>
                 </div>
 
             </div>

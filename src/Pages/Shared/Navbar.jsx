@@ -49,16 +49,13 @@ const Navbar = () => {
                         <li className="mx-4 my-4 md:my-0">
                             <NavLink onClick={() => scrollToSection('contact')} className="hover:text-blue-500">Contact</NavLink>
                         </li>
-                        {/* <li className="mx-4 my-4 lg:my-0">
-                            <Link><button className="btn btn-warning">Download Resume</button></Link>
-                        </li> */}
-
+                        
                     </ul>
 
 
                     {/* btn  */}
                     <div>
-                        <button className="bg-blue-900 px-4 py-3 rounded-md hidden md:flex"> Resume</button>
+                        <button className="bg-blue-900 px-4 py-3 rounded-md hidden md:flex"> <a href="/public/Resume_of_jahid_hasan.pdf" download="Resume_of_jahid_hasan.pdf">Resume</a></button>
                     </div>
                    
             </div>

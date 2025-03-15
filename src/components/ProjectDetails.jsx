@@ -38,17 +38,16 @@ const ProjectDetails = () => {
                 {/* overview */}
                 <div className=" flex flex-col gap-4 text-white pt-8">
                     <h2 className="text-2xl font-semibold ">{detailsData.heading}</h2>
-                    <p className="">{detailsData.paragraph}</p>
+                    <p className=""><span className="font-bold">Overview:</span> {detailsData.paragraph}</p>
+                    <p className=""><span className="font-bold">Improve:</span> {detailsData.improve}</p>
                     <p className="font-semibold text-lg  md:flex md:items-center  gap-4">Tech Stack: <span className="flex flex-wrap gap-3 mt-2 md:mt-0">{detailsData?.tools?.map((tool, index) => (
                         <span key={index} className="text-sm font-medium border py-2 px-3 rounded-md">{tool?.name}</span>
                     ))}</span></p>
                     <div className="mt-4 flex gap-4">
-                        <a href={detailsData.live} target="_blank" rel="noopener noreferrer" className="px-5 py-2 border rounded-md border-blue-900 bg-blue-900">Live Project</a>
-                        <a href={detailsData.github} target="_blank" rel="noopener noreferrer" className="px-5 py-2 flex gap-2 items-center border rounded-md border-black hover:bg-black">Client <FiGithub className="text-xl"/> </a>
+                        <a href={detailsData.live} target="_blank" rel="noopener noreferrer" className="px-5 py-2 border rounded-sm border-blue-900 bg-blue-900">Live Project</a>
+                        <a href={detailsData.client} target="_blank" rel="noopener noreferrer" className="px-5 py-2 flex gap-2 items-center border rounded-sm border-black hover:bg-black">Client <FiGithub className="text-xl"/> </a>
 
-                        {/* <a href={detailsData.github} target="_blank" rel="noopener noreferrer" className="px-5 py-2 flex gap-2 items-center border border-black hover:bg-black">Server <FiGithub className="text-xl"/> </a> */}
-
-                        
+                        <a href={detailsData.server} target="_blank" rel="noopener noreferrer" className="px-5 py-2 flex gap-2 items-center border rounded-sm border-black hover:bg-black">Server <FiGithub className="text-xl"/> </a>
                     </div>
                 </div>
             </div>
