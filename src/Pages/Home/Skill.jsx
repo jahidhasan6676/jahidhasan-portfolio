@@ -7,6 +7,7 @@ import SkillCard from "../../components/SkillCard";
 const skills = [
     { title: 'HTML', icon: 'https://skillicons.dev/icons?i=html' },
     { title: 'CSS', icon: 'https://skillicons.dev/icons?i=css' },
+    { title: 'Tailwind', icon: 'https://skillicons.dev/icons?i=tailwind' },
     { title: 'JavaScript', icon: 'https://skillicons.dev/icons?i=javascript' },
     { title: 'React', icon: 'https://skillicons.dev/icons?i=react' },
     { title: 'Firebase', icon: 'https://skillicons.dev/icons?i=firebase' },

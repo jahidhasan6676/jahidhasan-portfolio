@@ -10,10 +10,10 @@ const HeroSection = () => {
             <div className="space-y-6  ">
                 <div className='space-y-3 text-white  md:text-start'>
                     <h2 className="text-lg">Hi, Myself <br /> <span className="text-3xl font-semibold text-blue-500">Jahid Hasan</span></h2>
-                    <h4 className=" text-xl flex  md:justify-start items-center  gap-2">And I'm a <span className="text-2xl md:text-3xl text-blue-500">
+                    <h4 className=" text-xl flex  md:justify-start items-center  gap-2">And I'm a <span className="text-[20px] sm:text-2xl md:text-3xl text-blue-500">
                         <Typewriter 
                             options={{
-                                strings: ["Frontend Developer"],
+                                strings: ["Frontend Developer", "Web Developer", "React Developer"],
                                 autoStart: true,
                                 loop: true,
                                 delay: 50

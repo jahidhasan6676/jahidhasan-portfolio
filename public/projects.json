@@ -35,7 +35,7 @@
     {
         "_id": 2,
         "image": "https://i.ibb.co.com/LXpR5wth/Screenshot-2025-03-15-123307.png",
-        "heading": "WearHive Fashion E-Commerce Platform",
+        "heading": "WearHive E-Commerce Platform",
         "paragraph": "WearHive is a dynamic and user-friendly e-commerce platform designed to offer a seamless shopping experience while empowering sellers with efficient product management tools. The platform focuses on selling high-quality clothing for men, women, and kids, ensuring a visually appealing and intuitive interface. With a fully responsive design, WearHive works smoothly across desktops, tablets, and smartphones, providing users with an effortless browsing and purchasing experience. Customers can explore a wide range of products, apply filters for quick navigation, and securely complete their purchases using Stripe and SSL Commerce payment gateways. The platform ensures a hassle-free checkout process, real-time order tracking, and a review system for better shopping decisions.The platform supports multiple user roles, each with specific responsibilities to ensure smooth operations. Customers can browse products, apply filters, add items to their cart, complete secure purchases, track their orders, and leave reviews and ratings on products. Sellers are able to add and manage products, including images, descriptions, and stock availability. They can also view and manage customer orders and track their sales performance through an analytics dashboard. Moderators are responsible for reviewing and approving or rejecting product listings submitted by sellers, monitoring customer reviews to ensure they meet platform guidelines, resolving disputes between customers and sellers, and maintaining the quality of product listings. Finally, Admin have full control over user management and ensure the platform's security and smooth functioning.",
         "improve": "Advanced payment integration with Stripe and SSL Commerce for a more secure and seamless payment experience. Dashboard analytics to help sellers track their sales, revenue, and customer interactions. Push notifications to inform users about new offers, discounts, and order updates.A smarter recommendation system using AI to suggest products based on user preferences and browsing history. I am continuously working to improve WearHive and make it more feature-rich and efficient.",
         "tools": [
@@ -71,6 +71,9 @@
             },
             {
                 "name": "Stripe"
+            },
+            {
+                "name": "AI Chatbot(Gemini)"
             }
         ],
         "live": "https://shopper-application-3cae2.web.app",
