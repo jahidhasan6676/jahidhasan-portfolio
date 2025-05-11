@@ -1,5 +1,5 @@
 import { useState } from "react";
-import {NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 // bg-[#1f242d]
 
@@ -14,7 +14,7 @@ const Navbar = () => {
     };
 
     return (
-        <nav  className="py-5 text-white w-full bg-[#1f242d]">
+        <nav className="py-5 text-white w-full bg-[#1f242d]">
 
             <div className="w-11/12 lg:w-10/12 mx-auto md:flex md:justify-between md:items-center ">
                 {/* logo and name */}
@@ -29,35 +29,47 @@ const Navbar = () => {
                     </div>
                 </div>
                 {/* page name */}
-                
-                    <ul className={`md:flex md:items-center md:static absolute md:z-auto z-[-1] bg-[#1f242d] w-full  left-0 md:w-auto md:pb-0 pb-6 md:pl-0 pl-7 transition-all duration-500 ease-in  ${open
-                        ? "top-[76px] opacity-100 "
-                        : "hidden"
-                        }`}>
-                        <li className="mx-4 my-4 md:my-0">
-                            <NavLink onClick={() => scrollToSection('home')} className="hover:text-blue-500">  Home </NavLink>
-                        </li>
-                        <li className="mx-4 my-4 md:my-0">
-                            <NavLink onClick={() => scrollToSection('about')} className="hover:text-blue-500">About me</NavLink>
-                        </li>
-                        <li className="mx-4 my-4 md:my-0">
-                            <NavLink onClick={() => scrollToSection('skill')} className="hover:text-blue-500">Skill</NavLink>
-                        </li>
-                        <li className="mx-4 my-4 md:my-0">
-                            <NavLink onClick={() => scrollToSection('projects')} className="hover:text-blue-500">Projects</NavLink>
-                        </li>
-                        <li className="mx-4 my-4 md:my-0">
-                            <NavLink onClick={() => scrollToSection('contact')} className="hover:text-blue-500">Contact</NavLink>
-                        </li>
-                        
-                    </ul>
+
+                <ul className={`md:flex md:items-center md:static absolute md:z-auto z-[-1] bg-[#1f242d] w-full  left-0 md:w-auto md:pb-0 pb-6 md:pl-0 pl-7 transition-all duration-500 ease-in  ${open
+                    ? "top-[76px] opacity-100 "
+                    : "hidden"
+                    }`}>
+                    <li className="mx-4 my-4 md:my-0">
+                        <NavLink onClick={() => scrollToSection('home')} className="hover:text-blue-500">  Home </NavLink>
+                    </li>
+                    <li className="mx-4 my-4 md:my-0">
+                        <NavLink onClick={() => scrollToSection('about')} className="hover:text-blue-500">About me</NavLink>
+                    </li>
+                    <li className="mx-4 my-4 md:my-0">
+                        <NavLink onClick={() => scrollToSection('skill')} className="hover:text-blue-500">Skill</NavLink>
+                    </li>
+                    <li className="mx-4 my-4 md:my-0">
+                        <NavLink onClick={() => scrollToSection('projects')} className="hover:text-blue-500">Projects</NavLink>
+                    </li>
+                    <li className="mx-4 my-4 md:my-0">
+                        <NavLink onClick={() => scrollToSection('contact')} className="hover:text-blue-500">Contact</NavLink>
+                    </li>
+
+                </ul>
 
 
-                    {/* btn  */}
-                    <div>
-                        <button className="bg-blue-900 px-4 py-3 rounded-md hidden md:flex"> <a href="/public/Resume_of_jahid_hasan.pdf" download="Resume_of_jahid_hasan.pdf">Resume</a></button>
-                    </div>
-                   
+                {/* btn  */}
+                <div>
+                    <button className="group relative overflow-hidden bg-blue-900 px-4 py-3 rounded-md hidden md:flex text-white font-medium transition-all duration-300 ">
+                        {/* Hover effect layer */}
+                        <span className="absolute inset-0 bg-blue-950 scale-x-0 origin-left transition-transform duration-1000 group-hover:scale-x-100 z-0 rounded-md" />
+
+                        {/* Button content */}
+                        <a
+                            href="/public/Resume_of_jahid_hasan.pdf"
+                            download="Resume_of_jahid_hasan.pdf"
+                            className="relative z-10"
+                        >
+                            Resume
+                        </a>
+                    </button>
+                </div>
+
             </div>
         </nav>
     );
