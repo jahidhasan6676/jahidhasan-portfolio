@@ -2,12 +2,15 @@ import React from 'react';
 import { Outlet } from 'react-router-dom';
 import Navbar from '../Pages/Shared/Navbar';
 import Footer from '../Pages/Shared/Footer';
+import ScrollToTop from '../components/ScrollToTop';
 
 const Root = () => {
     // bg-[#1f242d]
     //
     return (
         <div className='bg-[#1f242d]'>
+            <>
+            <ScrollToTop/>
             <div className='sticky top-0 z-50'>
                 <Navbar></Navbar>
             </div>
@@ -15,6 +18,7 @@ const Root = () => {
                 <Outlet></Outlet>
             </div>
             <Footer></Footer>
+            </>
         </div>
     );
 };
