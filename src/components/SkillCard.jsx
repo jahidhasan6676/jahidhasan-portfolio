@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 const SkillCard = ({ title, icon }) => {
   return (
     <motion.div
-      className="group relative bg-[#1f242d] rounded-xl p-6 border border-[#4a7dff]/30 hover:border-[#4a7dff]/30 transition-all duration-300  hover:shadow-[#4a7dff]/10"
+      className="group relative bg-[#1f242d] rounded-xl hover:shadow-sm p-6 border border-[#4a7dff]/30 hover:border-[#4a7dff]/30 transition-all duration-300  hover:shadow-[#4a7dff]/10"
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-30px" }}

@@ -57,12 +57,12 @@ const Navbar = () => {
                 <div>
                     <button className="group relative overflow-hidden bg-blue-900 px-4 py-3 rounded-md hidden md:flex text-white font-medium transition-all duration-300 ">
                         {/* Hover effect layer */}
-                        <span className="absolute inset-0 bg-blue-950 scale-x-0 origin-left transition-transform duration-1000 group-hover:scale-x-100 z-0 rounded-md" />
+                        <span className="absolute inset-0 bg-blue-950/50 scale-x-0 origin-left transition-transform duration-1000 group-hover:scale-x-100 z-0 rounded-md" />
 
                         {/* Button content */}
                         <a
-                            href="/public/Resume_of_jahid_hasan.pdf"
-                            download="Resume_of_jahid_hasan.pdf"
+                            href="/public/Resume_of_jahid_hasan_Frontend_Developer.pdf"
+                            download="Resume_of_jahid_hasan_Frontend_Developer.pdf"
                             className="relative z-10"
                         >
                             Resume

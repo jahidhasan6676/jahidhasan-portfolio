@@ -7,7 +7,7 @@ const ProjectsCard = ({ project }) => {
     
     return (
         <motion.div
-            className="flex flex-col w-full bg-[#1f242d] p-5 rounded-xl border border-[#3a404b] hover:border-[#4a7dff]/40 transition-all duration-300 shadow-lg hover:shadow-[#4a7dff]/10 overflow-hidden"
+            className="flex flex-col w-full bg-[#1f242d] p-5 rounded-xl border border-[#3a404b] hover:border-[#4a7dff]/40 transition-all duration-300 hover:shadow-lg hover:shadow-[#4a7dff]/10 overflow-hidden"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-30px" }}
@@ -31,7 +31,7 @@ const ProjectsCard = ({ project }) => {
             {/* Content */}
             <div className="flex flex-col mt-5 flex-grow">
                 <h1 className="font-semibold text-xl text-white mb-2">
-                    {heading}
+                    {heading.slice(0,34)}
                 </h1>
                 
                 <p className="text-gray-300 text-sm mb-4 line-clamp-3">
@@ -43,8 +43,7 @@ const ProjectsCard = ({ project }) => {
                     {tools?.slice(0, 4).map((tool, index) => (
                         <span 
                             key={index}
-                            className="px-3 py-1 bg-[#4a7dff]/10 text-[#4a7dff] text-xs rounded-full"
-                        >
+                            className="px-3 py-1 bg-[#4a7dff]/10 text-[#4a7dff] text-xs rounded-full">
                             {tool.name}
                         </span>
                     ))}
@@ -62,8 +61,7 @@ const ProjectsCard = ({ project }) => {
                         target="_blank" 
                         rel="noopener noreferrer"
                         className="flex items-center gap-2 text-sm text-[#4a7dff] hover:text-white transition-colors"
-                        whileHover={{ x: 2 }}
-                    >
+                        whileHover={{ x: 2 }}>
                         <FaLink className="text-base" />
                         Live Preview
                     </motion.a>
@@ -74,20 +72,17 @@ const ProjectsCard = ({ project }) => {
                             target="_blank" 
                             rel="noopener noreferrer"
                             className="flex items-center gap-2 text-sm text-gray-400 hover:text-white transition-colors"
-                            whileHover={{ x: 2 }}
-                        >
+                            whileHover={{ x: 2 }}>
                             <FaGithub className="text-base" />
                             Code
                         </motion.a>
                         
                         <motion.div
                             whileHover={{ scale: 1.05 }}
-                            transition={{ type: "spring", stiffness: 400 }}
-                        >
+                            transition={{ type: "spring", stiffness: 400 }}>
                             <Link 
                                 to={`/projectDetails/${_id}`}
-                                className="text-sm text-gray-400 hover:text-white transition-colors flex items-center gap-2"
-                            >
+                                className="text-sm text-gray-400 hover:text-white transition-colors flex items-center gap-2">
                                 <FaEye className="text-base" />
                                 Details
                             </Link>

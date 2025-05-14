@@ -6,8 +6,8 @@ import { FaFacebook, FaLinkedinIn, FaTwitter, FaInstagram, FaDownload } from "re
 
 const HeroSection = () => {
     const socialLinks = [
-        { icon: <FaFacebook />, url: "https://www.facebook.com/jm.jahid.hasan.392854" },
-        { icon: <FaLinkedinIn />, url: "https://www.linkedin.com/in/jm-jahid-hasan/" },
+        { icon: <FaFacebook />, url: "https://www.facebook.com/jm.jahid.hasan.392854"},
+        { icon: <FaLinkedinIn />, url: "https://www.linkedin.com/in/md-jahid-hasan6676"},
         { icon: <FaTwitter />, url: "#" },
         { icon: <FaInstagram />, url: "#" }
     ];
@@ -75,8 +75,7 @@ const HeroSection = () => {
                                 whileHover={{
                                     y: -5,
                                 }}
-                                whileTap={{ scale: 0.9 }}
-                            >
+                                whileTap={{ scale: 0.9 }}>
                                 {/* Glow effect */}
                                 <div className="absolute inset-0 rounded-full bg-[#4a7dff] opacity-0 group-hover:opacity-20 
                                   transition-opacity duration-300 pointer-events-none"></div>
@@ -88,15 +87,6 @@ const HeroSection = () => {
                                     })}
                                 </div>
 
-                                {/* Tooltip with enhanced shadow */}
-                                {/* <div className="absolute -bottom-8 left-1/2 transform -translate-x-1/2 
-                                  bg-[#323946] text-white text-xs px-2 py-1 rounded whitespace-nowrap
-                                  opacity-0 group-hover:opacity-100 transition-opacity duration-300
-                                  shadow-[0_0_10px_3px_rgba(74,125,255,0.5)]
-                                  border border-[#4a7dff] pointer-events-none">
-                                    {social.url.replace(/^https?:\/\/(www\.)?/, '').split('/')[0]}
-                                </div> */}
-
                                 {/* Border glow effect */}
                                 <div className="absolute inset-0 rounded-full border-2 border-transparent 
                                   group-hover:border-[#4a7dff]/50 pointer-events-none
@@ -104,6 +94,7 @@ const HeroSection = () => {
                             </motion.a>
                         ))}
                     </motion.div>
+                    
                     {/* Download Button */}
                     <motion.div
                         initial={{ opacity: 0 }}
@@ -118,13 +109,16 @@ const HeroSection = () => {
                             whileTap={{ scale: 0.95 }}
                         >
                             {/* Left-to-right fill animation using ::before */}
-                            <span className="absolute inset-0 before:absolute before:inset-0 before:bg-blue-950 before:origin-left before:scale-x-0 group-hover:before:scale-x-100 before:transition-transform before:duration-1000 before:z-0 rounded-lg" />
+                            <span className="absolute inset-0 before:absolute before:inset-0 before:bg-blue-950/50 before:origin-left before:scale-x-0 group-hover:before:scale-x-100 before:transition-transform before:duration-1000 before:z-0 rounded-lg" />
 
                             {/* Content above background */}
-                            <span className="relative z-10 flex items-center gap-2">
+                            <a className="relative z-10 flex items-center gap-2"
+                                href='/public/Resume_of_jahid_hasan_Frontend_Developer.pdf'
+                                download="Resume_of_jahid_hasan_Frontend_Developer.pdf"
+                            >
                                 <FaDownload className="" />
                                 Download Resume
-                            </span>
+                            </a>
                             {/* transition-transform group-hover:-translate-y-0.5 */}
                         </motion.a>
                     </motion.div>

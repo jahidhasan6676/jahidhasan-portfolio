@@ -4,7 +4,7 @@
         "image": "https://i.ibb.co.com/mrb5St5x/Screenshot-2025-03-13-145111.png",
         "heading": "Tech Product Hunt",
         "paragraph": "The Product Hunt Website is a dynamic platform designed to help users explore, share, and engage with the latest advancements in technology, including web applications, AI tools, software, games, and mobile applications. This platform serves as a hub for tech enthusiasts, allowing them to discover trending products, share their own innovations, and participate in discussions through voting, reporting, and reviewing.One of the key aspects of this platform is its ability to empower users by giving them the opportunity to add new tech products to the website. Any user can submit a product they find useful or have developed themselves, making it accessible to the entire community. Once a product is submitted, other users can vote for it based on its usefulness and popularity. This voting system helps highlight the best and most innovative products, giving them the visibility they deserve.To maintain the quality and integrity of the platform, users can also report products they find inappropriate or misleading. Additionally, they can leave detailed reviews about the products, sharing their experiences, feedback, and suggestions. This feature not only helps other users make informed decisions but also encourages product creators to improve their offerings based on constructive criticism.The platform has a well-structured role management system, ensuring that content is moderated effectively. Moderators are responsible for reviewing reported products, checking user submissions, and deciding whether a product should be approved or rejected. This helps maintain a standard of quality across the platform. Meanwhile, admins have the highest level of control, overseeing user management, handling platform-wide operations, and ensuring that everything runs smoothly.Developing this platform was not without its challenges. One of the biggest hurdles was ensuring a secure and well-maintained role management system, where different users have different levels of access. Implementing role-based access control (RBAC) was crucial to prevent unauthorized actions and keep the platform safe and reliable.Additionally, optimizing the platform for seamless user experience was another challenge. From designing an intuitive UI to implementing a smooth product submission and approval workflow, every aspect required careful consideration. Security measures were also put in place to protect user data and prevent misuse of the platformThis is just the beginning of the Product Hunt Website.",
-        "improve":"I am continuously working on improving its functionality, enhancing its user experience, and making it a more valuable resource for the tech community. Future updates will focus on making the platform more interactive, feature-rich, and efficient, ensuring that users can discover, share, and engage with cutting-edge tech products in the best possible way.",
+        "improve": "I am continuously working on improving its functionality, enhancing its user experience, and making it a more valuable resource for the tech community. Future updates will focus on making the platform more interactive, feature-rich, and efficient, ensuring that users can discover, share, and engage with cutting-edge tech products in the best possible way.",
         "tools": [
             {
                 "name": "React"
@@ -15,14 +15,12 @@
             {
                 "name": "Firebase"
             },
-            
             {
                 "name": "Javascript"
             },
             {
                 "name": "MongoDB"
             },
-            
             {
                 "name": "Node.js"
             }
@@ -31,14 +29,11 @@
         "client": "https://github.com/jahidhasan6676/tech-product-hunt-client",
         "server": "https://github.com/jahidhasan6676/tech-product-hunt-server"
     },
-    
     {
         "_id": 2,
-        "image": "https://i.ibb.co.com/LXpR5wth/Screenshot-2025-03-15-123307.png",
+        "image": "https://i.ibb.co/KjVLP1QB/Screenshot-2025-05-09-002950.png",
         "heading": "WearHive E-Commerce Platform",
-        "paragraph": "WearHive is a dynamic and user-friendly e-commerce platform designed to offer a seamless shopping experience while empowering sellers with efficient product management tools. The platform focuses on selling high-quality clothing for men, women, and kids, ensuring a visually appealing and intuitive interface. With a fully responsive design, WearHive works smoothly across desktops, tablets, and smartphones, providing users with an effortless browsing and purchasing experience. Customers can explore a wide range of products, apply filters for quick navigation, and securely complete their purchases using Stripe and SSL Commerce payment gateways. The platform ensures a hassle-free checkout process, real-time order tracking, and a review system for better shopping decisions.The platform supports multiple user roles, each with specific responsibilities to ensure smooth operations. Customers can browse products, apply filters, add items to their cart, complete secure purchases, track their orders, and leave reviews and ratings on products. Sellers are able to add and manage products, including images, descriptions, and stock availability. They can also view and manage customer orders and track their sales performance through an analytics dashboard. Moderators are responsible for reviewing and approving or rejecting product listings submitted by sellers, monitoring customer reviews to ensure they meet platform guidelines, resolving disputes between customers and sellers, and maintaining the quality of product listings. Finally, Admin have full control over user management and ensure the platform's security and smooth functioning.",
-        "improve": "Advanced payment integration with Stripe and SSL Commerce for a more secure and seamless payment experience. Dashboard analytics to help sellers track their sales, revenue, and customer interactions. Push notifications to inform users about new offers, discounts, and order updates.A smarter recommendation system using AI to suggest products based on user preferences and browsing history. I am continuously working to improve WearHive and make it more feature-rich and efficient.",
-        "tools": [
+        "paragraph": "WearHive is a dynamic and fully responsive e-commerce platform developed to simplify online clothing purchases for men, women, and kids. The primary objective behind building this platform was to create a smooth and intuitive shopping experience where customers can easily browse, find, and purchase products. The platform ensures seamless accessibility across all devices, including desktops, tablets, and smartphones, maintaining a consistent and user-friendly interface. Customers can explore a wide collection of products, filter them by category, and sort them by price to quickly find suitable items. Pagination has been implemented to efficiently handle large volumes of products without compromising performance. A secure and streamlined checkout process has been integrated using trusted payment gateways such as Stripe and SSLCommerz. Customers can track their orders in real-time and leave reviews and ratings to help others make better purchase decisions. To enhance support and engagement, an AI-powered chatbot has been implemented to assist users during their shopping journey. The platform supports multiple user roles to ensure effective operation and role-based functionality. Customers can browse, purchase, and review products with ease. Sellers are able to add and manage their product listings, update inventory, view orders, and monitor performance through an analytics dashboard. Moderators are responsible for reviewing product listings submitted by sellers, managing customer reviews, and resolving disputes when necessary. Admins have full control over the system, including user management and platform security, ensuring smooth operation at all levels.","improve": "I plan to integrate the SSL Commerce payment method to further enhance the security and convenience of transactions on the platform. Additionally, I will implement a real-time chat feature that will enable direct communication between customers and sellers, making the shopping experience more interactive and personalized. I am committed to continuously improving WearHive, ensuring it provides better services and a seamless user experience for both customers and sellers. These improvements will focus on making the platform even more efficient, secure, and user-friendly.","tools": [
             {
                 "name": "TailwindCSS"
             },
@@ -82,37 +77,35 @@
     },
     {
         "_id": 3,
-        "image": "https://i.ibb.co.com/Fk3WHHmw/Screenshot-2025-03-13-150646.png",
-        "heading": "Library Management System",
-        "paragraph": "The Library Management System is designed for book lovers, allowing them to borrow and read books online with ease. It offers a wide range of book categories, enabling readers to explore and enjoy their favorite genres. Users can also add new books to expand the collection and borrow books just like a traditional library.The platform is fully responsive, ensuring a seamless experience across all devices. A dedicated Help Center is available for user assistance, along with detailed information about the website.Security has been a major priority in the development of this website. The platform ensures that user data and book records are well-protected, making it a safe environment for users to browse, add, and manage books without concerns about security risks.Users have full control over the books they add to the system. They can view, edit, and delete their added books at any time. This feature ensures that users can update book information as needed, maintaining the accuracy and quality of the library collection.",
-        "improve":"I am continuously working on enhancing this Library Management System, adding new features and improvements to provide a better experience for book enthusiasts. Future updates will focus on improving search functionality, personalized recommendations, and interactive reading experiences. The goal is to make this platform a one-stop destination for online book borrowing and reading, making it easier for users to access and enjoy books from anywhere.",
+        "image": "https://i.ibb.co/bRgYcxjm/Screenshot-2025-05-09-093528.png",
+        "heading": "AI-Powered Healthcare Appointment System(Team Project)",
+        "paragraph": "A modern healthcare platform that uses artificial intelligence to recommend appropriate medical care and connect patients with the best available doctors in their area. The system features a user-friendly interface, secure authentication, and a responsive design. Users can easily book appointments, manage their health records, and receive personalized recommendations.",
+        "improve": "Live chat integration for real-time Doctor-Patient interaction. AI-powered appointment recommendations based on user preferences. Automated reminders for upcoming appointments. Multi-language support to enhance accessibility.",
         "tools": [
             {
-                "name": "React"
+                "name": "Next.js"
             },
             {
                 "name": "TailwindCSS"
             },
             {
-                "name": "Firebase"
+                "name": "NextAuth"
             },
             {
                 "name": "MongoDB"
             },
             {
-                "name": "Javascript"
+                "name": "Mongoose"
             },
             {
-                "name": "Node.js"
+                "name": "AI Agent(Gemini)"
             },
             {
-                "name": "Express"
+                "name": "Framer Motion"
             }
         ],
-        "live": "https://batch10-assignment11-projects.web.app",
-        "client": "https://github.com/jahidhasan6676/Library-Management-System-Application",
-        "server": "https://github.com/jahidhasan6676/Library-Management-System-Application-Server"
+        "live": "https://healthcare-appointment-system-three.vercel.app",
+        "client": "https://github.com/arshakib/Healthcare-Appointment-System",
+        "server": "https://github.com/arshakib/Healthcare-Appointment-System"
     }
-   
-    
 ]

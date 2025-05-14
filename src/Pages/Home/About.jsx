@@ -2,54 +2,59 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 const About = () => {
-    return (
-        <section id='about' className='w-11/12 lg:w-10/12 mx-auto py-20'>
-            <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6 }}
-                viewport={{ once: true }}
-                className="bg-[#1f242d] rounded-xl p-8 md:p-10 shadow-2xl border border-[#3a404b]">
-                {/* Header */}
-                <div className="text-center mb-10">
-                    <h2 className="text-3xl font-bold text-white">
-                        About <span className="text-[#4a7dff]">Me</span>
-                    </h2>
-                    <div className="w-20 h-1 bg-[#4a7dff] mx-auto mt-3"></div>
-                </div>
+  return (
+    <section id='about' className='w-11/12 lg:w-10/12 mx-auto'>
 
-                {/* Content */}
-                <div className="space-y-6 text-gray-300 leading-relaxed">
-                    <p>
-                        Hi, I'm <span className="text-[#4a7dff] font-medium">Jahid Hasan</span>, a passionate <span className="text-white">Frontend Developer</span> who loves crafting visually appealing and user-friendly web applications. I enjoy turning ideas into reality with modern technologies like <span className="text-[#4a7dff]">React</span>, <span className="text-[#4a7dff]">Tailwind CSS</span>, and <span className="text-[#4a7dff]">JavaScript</span>.
-                    </p>
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+        viewport={{ once: true }}
+        className="relative mb-10"
+      >
+        <h2 className="text-2xl font-semibold text-white text-center ">
+          About <span className='text-[#4a7dff]'>Me</span>
+        </h2>
+        {/* <div className="absolute -bottom-3 left-1/2 transform -translate-x-1/2 w-24 h-1 bg-blue-600 rounded-full"></div> */}
+      </motion.div>
 
-                    <p>
-                        Currently, I'm exploring <span className="text-[#4a7dff]">backend development</span> with <span className="text-white">Node.js</span> to expand my skill set. Right now, I'm working on an <span className="text-[#4a7dff]">e-commerce website</span>, focusing on both frontend and backend to create a seamless user experience.
-                    </p>
+      <div className="">
+        <motion.div
+          initial={{ opacity: 0, x: -20 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+          viewport={{ once: true }}
+          className="">
 
-                    <div className="bg-[#2a303c] p-5 rounded-lg border-l-4 border-[#4a7dff]">
-                        <h3 className="text-xl font-semibold mb-3 text-[#4a7dff]">My Projects</h3>
-                        <ul className="space-y-2 list-disc list-inside marker:text-[#4a7dff]">
-                            <li><span className="text-white">Library Management Application</span></li>
-                            <li><span className="text-white">Visa Landing Application</span></li>
-                            <li><span className="text-white">Product Hunt Application</span></li>
-                        </ul>
-                    </div>
+        </motion.div>
 
-                    <p>
-                        Besides coding, I'm a huge <span className="text-[#4a7dff]">cricket enthusiast</span>! Whether it's watching thrilling matches or playing on the field, I love the sport just as much as I love building web applications.
-                    </p>
+        <motion.div
+          initial={{ opacity: 0, x: 20 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.6, delay: 0.4 }}
+          viewport={{ once: true }}
+          className="">
+          <div className=" p-8 rounded-xl border border-gray-700">
+            <p className="text-gray-100 text-lg leading-relaxed">
+              I am a <span className='text-blue-500 font-medium'>Frontend Developer</span> focused on building clean, responsive, and user-friendly web applications. My core skills include React.js, Tailwind CSS, JavaScript, Firebase, Node.js, Express.js, and MongoDB. I have a basic understanding of Next.js and I am currently exploring both Next.js and Redux to strengthen my development workflow.
+            </p>
 
-                    <div className="pt-4 text-center">
-                        <p className="text-lg font-medium">
-                            I'm always eager to learn and improve. <span className="text-[#4a7dff]">Let's create something amazing together!</span>
-                        </p>
-                    </div>
-                </div>
-            </motion.div>
-        </section>
-    );
+            <p className="text-gray-100 text-lg leading-relaxed">
+              I have completed several projects, including <span className='text-blue-500 font-medium'>WearHive (an e-commerce platform)</span>, <span className='text-blue-500 font-medium'>Tech Product Hunt</span>, and a team project titled <span className='text-blue-500 font-medium'>AI-Powered Healthcare Appointment System</span>. I enjoy working on both individual and collaborative projects that allow me to solve real-world problems through code.
+            </p>
+
+            <p className="text-gray-100 text-lg leading-relaxed">
+              Outside of development, I have a strong interest in <span className='text-blue-400 font-medium'>cricket</span>, which helps me maintain a healthy balance between work and personal life.
+            </p>
+
+            <p className="text-gray-100 text-lg leading-relaxed">
+              I believe in continuous learning and self-improvement to keep up with the evolving tech landscape. Currently, I’m looking for new challenges and collaborative opportunities where I can grow and contribute meaningfully.
+            </p>
+          </div>
+        </motion.div>
+      </div>
+    </section>
+  );
 };
 
 export default About;

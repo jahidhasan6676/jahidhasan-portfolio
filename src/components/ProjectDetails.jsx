@@ -140,7 +140,7 @@ const ProjectDetails = () => {
                                     href={detailsData.live}
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="flex items-center gap-3 px-4 py-3 bg-blue-900 hover:bg-blue-950 rounded-md transition-colors text-white"
+                                    className="flex items-center gap-3 px-4 py-3 bg-blue-900 hover:bg-blue-950/50 rounded-md transition-colors text-white"
                                     whileHover={{ x: 5 }}>
                                     <FiExternalLink className="text-xl" />
                                     <span>Live Project</span>
